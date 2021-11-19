@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inlämning 3</title>
+
+    <!-- Styla darkmode -->
+    <style>
+      .darkMode {
+        background-color: black;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="content">
+        <h1>DC Quiz</h1>
+        <!-- Knapp som ändrar till darkmode -->
+        <button onclick="changeMode()">Ändra läge</button>
+    
+        <h2>Fråga 1</h2>
+        <p>Batman kan flyga.</p>
+        <button value="false">Sant</button>
+        <button value="true">Falskt</button>
+    
+        <h2>Fråga 2</h2>
+        <p>Vem har inte spelat Catwoman?</p>
+        <input type="radio" name="catwoman" value="false" id="ques2Opt1" />
+        <label for="ques2Opt1">Michelle Pfeiffer</label>
+        <input type="radio" name="catwoman" value="true" id="ques2Opt2" />
+        <label for="ques2Opt2">Meryl Streep</label>
+        <input type="radio" name="catwoman" value="false" id="ques2Opt3" />
+        <label for="ques2Opt3">Halle Berry</label>
+        <button id="confirm">Välj</button>
+    
+        <h2>Fråga 3</h2>
+        <p>Stålmannen kommer från planeten Krypton.</p>
+        <button value="true">Sant</button>
+        <button value="false">Falskt</button>
+    
+        <h2>Fråga 4</h2>
+        <p>Vilket år gjorde Aquaman sitt första framträdande?</p>
+        <input type="radio" name="aquaman" value="true" id="ques4Opt1" />
+        <label for="ques4Opt1">1960</label>
+        <input type="radio" name="aquaman" value="false" id="ques4Opt2" />
+        <label for="ques4Opt2">1968</label>
+        <input type="radio" name="aquaman" value="false" id="ques4Opt3" />
+        <label for="ques4Opt4">1965</label>
+        <button id="confirm">Välj</button>
+    
+        <h2>Fråga 5</h2>
+        <p>The Flash är världens snabbaste man.</p>
+        <button value="true">Sant</button>
+        <button value="false">Falskt</button>
+    
+        <h2>Fråga 6</h2>
+        <p>Vem är Jokerns flickvän?</p>
+        <input type="radio" name="joker" value="false" id="ques6Opt1" />
+        <label for="ques6Opt1">Poison Ivy</label>
+        <input type="radio" name="joker" value="true" id="ques6Opt2" />
+        <label for="ques6Opt2">Harley Quinn</label>
+        <input type="radio" name="joker" value="false" id="ques6Opt3" />
+        <label for="ques6Opt3">Wonder Woman</label>
+        <button id="confirm">Välj</button>
+    
+        <h2>Fråga 7</h2>
+        <p>Vilka av dessa karaktärer är skurkar?</p>
+        <input type="checkbox" name="badGuys" value="false" id="ques7Opt1">
+        <label for="ques7Opt1">Alfred</label>
+        <input type="checkbox" name="badGuys" value="false" id="ques7Opt2">
+        <label for="ques7Opt2">Robin</label>
+        <input type="checkbox" name="badGuys" value="true" id="ques7Opt3">
+        <label for="ques7Opt3">Bane</label>
+        <input type="checkbox" name="badGuys" value="true" id="ques7Opt4">
+        <label for="ques7Opt4">Lex Luthor</label>
+        <button id="confirm">Välj</button>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
