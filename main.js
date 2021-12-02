@@ -1,15 +1,17 @@
-// Funktion som ändrar till darkmode
+// Funktion som ändrar till darkmode.
 function changeMode() {
     var element = document.body;
     element.classList.toggle("darkMode");
 }
 
+// Hämtar results och getResults.
 let div = document.querySelector("#results")
 let getResults = document.querySelector("#getResults");
 
 // Skriver ut sista resultatet och visar passande färg.
 let finalPoints = document.createElement("p");
 
+// Kollar igenom getResults och ser om användaren har svarat rätt.
 getResults.addEventListener("click", () => {
     let result = 0;
     if (document.getElementById("true1").checked) {
@@ -41,6 +43,8 @@ getResults.addEventListener("click", () => {
     } 
     else {}
 
+    // Skriver ut det fullständiga resultatet och visar i lämplig färg. 
+    // Användaren får reda på hur många rätt hen hade.
     div.appendChild(finalPoints);
     if (result === 7) {
         finalPoints.style.color = "#32CD32";
