@@ -4,43 +4,54 @@ function changeMode() {
     element.classList.toggle("darkMode");
 }
 
+let div = document.querySelector("#results")
 let getResults = document.querySelector("#getResults");
 
 // Skriver ut sista resultatet och visar passande färg.
-// let finalScore = document.createElement
+let finalPoints = document.createElement("p");
 
+getResults.addEventListener("click", () => {
+    let result = 0;
+    if (document.getElementById("true1").checked) {
+        result++;
+    }
+    if (document.getElementById("true2").checked) {
+        result++;
+    }
+    if (document.getElementById("true3").checked) {
+        result++;
+    }
+    if (document.getElementById("true4").checked) {
+        result++;
+    }
+    if (document.getElementById("true5").checked) {
+        result++;
+    }
+    if (document.getElementById("true6").checked) {
+        result++;
+    }
+    if (
+    document.getElementById("true7").checked == true &&
+    document.getElementById("true8").checked == true && 
+    document.getElementById("false7").checked == false &&
+    document.getElementById("false8").checked == false
+    ) 
+    {
+        result++;
+    } 
+    else {}
 
-// getResults.addEventlistener("click", () => {
-//     let counter = 0;
-//     if (document.getElementById(""))
-// })
-
-
-
-
-if (result == 7) {
-    "Grattis! Du hade alla rätt!"
-    finalScore.style.color = green;
-} 
-else if (result > 3){
-    "Snyggt jobbat! Du hade mer än hälften rätt!"
-    finalScore.style.color = orange;
-}
-else {
-    "Försök igen! Du hade mindre än hälften rätt!"
-    finalScore.style.color = red;
-}
-
-// <h3>Batman är starkast i DC-Universe!</h3>
-// <input type="radio" value="true" name="sant" />
-// <label for="sant">Sant</label>
-
-// let quizAnswer = () => {
-//   inputs.forEach((input) => {
-//     if(input.checked){
-//       answer = input.value;
-//     if(answer == "true"){
-//         count++;
-//       }
-//     }
-//   });
+    div.appendChild(finalPoints);
+    if (result === 7) {
+        finalPoints.style.color = "#32CD32";
+        finalPoints.textContent = "Grattis! Du hade alla rätt! " + result + "/7";
+    } 
+    else if (result > 3){
+        finalPoints.style.color = "#FFA500";
+        finalPoints.textContent = "Snyggt jobbat! Du hade mer än hälften rätt! " + result + "/7";
+    }
+    else {
+        finalPoints.style.color = "#ff0000";
+        finalPoints.textContent = "Försök igen! Du hade färre än hälften rätt! " + result + "/7";
+    }
+});

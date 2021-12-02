@@ -13,70 +13,73 @@
         color: yellow;
       }
     </style>
+
   </head>
   <body>
       <div id="content">
         <h1>DC Quiz</h1>
+
         <!-- Knapp som ändrar till darkmode -->
         <button onclick="changeMode()">Ändra läge</button>
     
         <h2>Fråga 1</h2>
         <p>Batman kan flyga.</p>
-        <button value="false">Sant</button>
-        <button value="true">Falskt</button>
+        <input type="radio" name="batman" value="false" id="false1">Sant</button>
+        <input type="radio" name="batman" value="true" id="true1">Falskt</button>
     
         <h2>Fråga 2</h2>
         <p>Vem har inte spelat Catwoman?</p>
-        <input type="radio" name="catwoman" value="false" id="ques2Opt1" />
-        <label for="ques2Opt1">Michelle Pfeiffer</label>
-        <input type="radio" name="catwoman" value="true" id="ques2Opt2" />
-        <label for="ques2Opt2">Meryl Streep</label>
-        <input type="radio" name="catwoman" value="false" id="ques2Opt3" />
-        <label for="ques2Opt3">Halle Berry</label>
-        <button id="confirm">Välj</button>
+        <input type="radio" name="catwoman" value="false" id="false2"/>
+        <label for="false2">Michelle Pfeiffer</label>
+        <input type="radio" name="catwoman" value="true" id="true2"/>
+        <label for="true2">Meryl Streep</label>
+        <input type="radio" name="catwoman" value="false" id="false2"/>
+        <label for="false2">Halle Berry</label>
     
         <h2>Fråga 3</h2>
         <p>Stålmannen kommer från planeten Krypton.</p>
-        <button value="true">Sant</button>
-        <button value="false">Falskt</button>
+        <input type="radio" name="superman" value="true" id="true3">Sant</button>
+        <input type="radio" name="superman" value="false" id="false3">Falskt</button>
     
         <h2>Fråga 4</h2>
         <p>Vilket år gjorde Aquaman sitt första framträdande?</p>
-        <input type="radio" name="aquaman" value="true" id="ques4Opt1" />
-        <label for="ques4Opt1">1960</label>
-        <input type="radio" name="aquaman" value="false" id="ques4Opt2" />
-        <label for="ques4Opt2">1968</label>
-        <input type="radio" name="aquaman" value="false" id="ques4Opt3" />
-        <label for="ques4Opt4">1965</label>
-        <button id="confirm">Välj</button>
+        <input type="radio" name="aquaman" value="true" id="true4"/>
+        <label for="true4">1960</label>
+        <input type="radio" name="aquaman" value="false" id="false4"/>
+        <label for="false4">1968</label>
+        <input type="radio" name="aquaman" value="false" id="false4"/>
+        <label for="false4">1965</label>
     
         <h2>Fråga 5</h2>
         <p>The Flash är världens snabbaste man.</p>
-        <button value="true">Sant</button>
-        <button value="false">Falskt</button>
+        <input type="radio" name="flash" value="true" id="true5">Sant</button>
+        <input type="radio" name="flash" value="false" id="false5">Falskt</button>
     
         <h2>Fråga 6</h2>
         <p>Vem är Jokerns flickvän?</p>
-        <input type="radio" name="joker" value="false" id="ques6Opt1" />
-        <label for="ques6Opt1">Poison Ivy</label>
-        <input type="radio" name="joker" value="true" id="ques6Opt2" />
-        <label for="ques6Opt2">Harley Quinn</label>
-        <input type="radio" name="joker" value="false" id="ques6Opt3" />
-        <label for="ques6Opt3">Wonder Woman</label>
-        <button id="confirm">Välj</button>
+        <input type="radio" name="joker" value="false" id="false6" />
+        <label for="false6">Poison Ivy</label>
+        <input type="radio" name="joker" value="true" id="true6" />
+        <label for="true6">Harley Quinn</label>
+        <input type="radio" name="joker" value="false" id="false6" />
+        <label for="false6">Wonder Woman</label>
     
         <h2>Fråga 7</h2>
         <p>Vilka av dessa karaktärer är skurkar?</p>
-        <input type="checkbox" name="badGuys" value="false" id="ques7Opt1">
-        <label for="ques7Opt1">Alfred</label>
-        <input type="checkbox" name="badGuys" value="false" id="ques7Opt2">
-        <label for="ques7Opt2">Robin</label>
-        <input type="checkbox" name="badGuys" value="true" id="ques7Opt3">
-        <label for="ques7Opt3">Bane</label>
-        <input type="checkbox" name="badGuys" value="true" id="ques7Opt4">
-        <label for="ques7Opt4">Lex Luthor</label>
-        <button id="confirm">Välj</button>
+        <input type="checkbox" name="badGuys" value="false" id="false7">
+        <label for="false7">Alfred</label>
+        <input type="checkbox" name="badGuys" value="false" id="false8">
+        <label for="false8">Robin</label>
+        <input type="checkbox" name="badGuys" value="true" id="true7">
+        <label for="true7">Bane</label>
+        <input type="checkbox" name="badGuys" value="true" id="true8">
+        <label for="true8">Lex Luthor</label>
       </div>
+
+      <!-- Knapp för att få resultat -->
+      <button id="getResults">Get results!</button>
+      <div id="results"></div>
+      
     <script src="main.js"></script>
   </body>
 </html>
